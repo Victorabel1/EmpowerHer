@@ -2,7 +2,7 @@
 
 This contains everything you need to run your app locally.
 
-View your app in AI Studio: https://ai.studio/apps/e3742813-693e-404b-86ce-aafeca53895c
+View the app https://victorabel1.github.io/EmpowerHer/
 
 ## Run Locally
 
