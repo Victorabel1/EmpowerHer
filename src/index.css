@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Be Vietnam Pro", sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: #0f5238;
+  --color-primary-container: #2d6a4f;
+  --color-primary-fixed: #b1f0ce;
+  --color-on-primary: #ffffff;
+  
+  --color-secondary: #a33d23;
+  --color-secondary-container: #ff8162;
+  --color-secondary-fixed: #ffdad2;
+  --color-on-secondary: #ffffff;
+
+  --color-tertiary: #2b4b58;
+  --color-tertiary-container: #446371;
+  --color-tertiary-fixed: #c6e8f8;
+  --color-on-tertiary: #ffffff;
+
+  --color-background: #fafaf5;
+  --color-surface: #fafaf5;
+  --color-surface-container-low: #f4f4ef;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-surface: #1a1c19;
+  --color-on-surface-variant: #404943;
+  --color-outline: #707973;
+  --color-outline-variant: #bfc9c1;
+
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+}
+
+@utility asymmetric-card {
+  border-top-left-radius: var(--radius-xl);
+  border-bottom-right-radius: var(--radius-xl);
+  border-top-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+
+@utility editorial-shadow {
+  box-shadow: 0 8px 24px rgba(15, 82, 56, 0.08);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-sans antialiased;
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
